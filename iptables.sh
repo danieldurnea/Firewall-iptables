@@ -111,3 +111,8 @@ iptables -P FORWARD DROP
 #eplace the ips-v4 with v6 if needed
 wget -qO- http://www.cloudflare.com/ips-v4
 iptables -I INPUT -p tcp -m multiport --dports 80,443,8080,8443,2052,2053,2082,2083,2086,2087,2095,2096,8880,8118 -s $ip -j ACCEPT
+iptables-save > /etc/iptables/rules.v4
+
+# Apply and confirm
+iptables-apply -t 40 /etc/iptables/rules.v4
+
