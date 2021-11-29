@@ -1,2 +1,2 @@
-# Firewall-ip6tables
-My firewall config iptables
+# Firewall-iptables
+My firewall config 
