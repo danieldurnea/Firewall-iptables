@@ -1,2 +1,2 @@
 
-My firewall config 
+My firewall config on OpenWrt router.
